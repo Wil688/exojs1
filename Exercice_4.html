@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Exercice4</title>
+        <meta charset="UTF-8" />
+    </head>
+    <body>
+        <form>
+            <label for="lastname">Nom : </label><input type="text" name="lastname" id="lastname"/>
+            <label for="firstname">Prénom : </label><input type="text" name="firstname" id="firstname"/>
+            <label for="city">Ville : </label><input type="text" name="city" id="city"/>
+            <button  name="submit" id="submit" onclick="resultat()">Valider</button>
+        </form>
+        <script>
+            let lastName = "Nom : ";
+            let firstName = "Prénom : ";
+            let city = "Ville : ";
+
+            function resultat() {
+                let lastname= document.getElementById("lastname").value;
+                let firstname= document.getElementById("firstname").value;
+                let ville= document.getElementById("city").value;
+    
+                let information =  alert(lastName+lastname+"\n"+firstName+firstname+"\n"+city+ville);
+            }
+
+        </script>
+    </body>
+</html>
