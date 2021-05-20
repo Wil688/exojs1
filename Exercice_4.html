@@ -12,18 +12,17 @@
             <button  name="submit" id="submit" onclick="resultat()">Valider</button>
         </form>
         <script>
-            let lastName = "Nom : ";
-            let firstName = "Prénom : ";
-            let city = "Ville : ";
-
             function resultat() {
-                let lastname= document.getElementById("lastname").value;
+                // lastName += lastname.value;
+                // firstName += lastname.value;
+                // city += city.value;
+                let lastname = document.getElementById("lastname").value;
                 let firstname= document.getElementById("firstname").value;
-                let ville= document.getElementById("city").value;
+                let city= document.getElementById("city").value;
     
-                let information =  alert(lastName+lastname+"\n"+firstName+firstname+"\n"+city+ville);
+                //let information =  alert(lastName+"\n"+firstName+"\n"+city);
+                let information =  alert("Nom : "+lastname+"\n"+"Prénom : "+firstname+"\n"+"Ville : "+city);
             }
-
         </script>
     </body>
 </html>
