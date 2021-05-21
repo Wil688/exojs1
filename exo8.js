@@ -5,5 +5,4 @@ function control() {
         alert("Vous êtes mineur");
     }
 }
-
 document.getElementById("submit").addEventListener("click",control);
