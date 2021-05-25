@@ -30,6 +30,39 @@
             function multiply(a,b) {
                 return parseInt(a)*parseFloat(b)
             }
+            // Correction de Mickael :
+            // // Add an event listener that calls displayResult function on button click
+/* document.querySelector('input[type="submit"]').addEventListener('click', displayResult);
+
+/**
+ * Compute result after checking if inputs represents decimal numbers with isNan and indexOf functions
+ * 
+  */
+/*             function computeResult() {
+                // Get inputs value
+                let number1Value = number1.value;
+                let number2Value = number2.value;
+
+                // Replace comma by point if necessary
+                number1Value = number1Value.replace(',', '.');
+                number2Value = number2Value.replace(',', '.');
+
+                // Check if inputs are numbers. If not script is stopped
+                if(isNaN(number1Value) || isNaN(number2Value)){
+                    return;
+                }
+
+                // Check if inputs represents decimal numbers. If not, script is stopped.
+                if ((number1Value.indexOf('.') == -1 || number1Value.indexOf('.') == number1Value.length - 1)
+                    || (number2Value.indexOf('.') == -1 || number2Value.indexOf('.') == number2Value.length - 1)) {             
+                    return;
+                }    
+
+                // Truncate first input and compute result
+                number1Value = Math.trunc(number1Value);
+                return number1Value * number2Value;   */  
+            } */
+
         </script>
     </body>
 </html>
